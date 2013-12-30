@@ -60,21 +60,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
+html {
+  height: 100%;
+  max-height: 100%;
+}
 body {	
-   background: #E2E2E6;   
-   font-size: 14px;
+    font-family: 'Droid Serif', serif;
+    background: #E2E2E6;   
+    font-size: 14px;
+    height: 100%;
+    max-height: 100%;
   }
- 
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+}   
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+  text-indent: -3px;
+}
 
 #main {
   background: #EB6767;
+  color: #E2E2E6;
   position: relative;
   width: 100%;
+  height: 100%;
   display: table;
-  overflow: hidden;
+  
   text-align: center;
 }
 
@@ -84,32 +106,32 @@ body {
   position: relative;
 }
 
-.headline {
-  vertical-align: middle;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.site-title {
+  font-family: 'Lobster', cursive;
+  margin: 10px 0 10px 0;
+  font-size: 5rem;
+  letter-spacing: 1px;
 }
 
-h1 {
-  font-family: 'Audiowide', cursive;
-  color: #E2E2E6;
-  letter-spacing: -5px;
-  font-size: 50px;
-  padding-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
+.site-description {
+  font-family: 'Droid Serif', serif;
+  margin: 0 0 80px;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
-.headline p {
-    font-family: 'Source Code Pro', sans-serif;
-    color: #E2E2E6;
-/*    text-shadow:2px 2px 0px #2F2F36;*/
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-top: 0px;
-    margin-bottom: 0px;
+ul.social {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+ul.social li {
+  display: inline;
+  padding: 8px;
 }
 
 #social {
@@ -125,17 +147,8 @@ a.link-social {
 }
 
 .icon-social {
-	color: #A5A0A7;
-	padding-right: 10px;
-  -moz-transition: all .4s ease-out;
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
+	color: #59575D;
 }
-
-a:hover .icon-social {
-  color: rgba(47, 47, 54, 1);
-}
-
 
 
 
