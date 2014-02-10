@@ -1,13 +1,25 @@
 ---
 layout: default
-title: jclagache Full Stack Developer
 ---
+
 	<section id="head">  
 		<div class="in">	
 	        <h1 class="site-title">jclagache</h1>    
 			<h2 class="site-description">Full Stack Developer</h2>	                 
 		</div>		  
 	</section> 
+
+	<section id="articles">
+	<article>
+		<div class="container">
+			<h2>{{ page.title }}</h2>
+			<p class="meta">{{ page.date | date_to_string }}</p>
+
+			<div class="post">
+				{{ content }}
+			</div>
+		</div>
+	</article>
 
 	<section id="social">  
 		<div class="container">	
