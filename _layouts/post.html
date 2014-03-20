@@ -4,17 +4,13 @@ layout: default
 
 	<section id="articles">
 	<article>
-		<div class="container-fluid">
+		<div class="container single-post-section">
 			<div class="row">
-				<div class="col-sm-8 col-lg-8 col-sm-offset-2 col-lg-offset-2">
+				<div class="col-md-offset-1 col-md-10 col-xs-12">
 					<div class="blog-post">
 						<h1 class="post-title">{{ page.title }}</h1>
 						<p class="meta">{{ page.date | date_to_string }}</p>
-						<div class="row-fluid clearfix">
-							<div class="col-lg-9">
 								{{ content }}
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
