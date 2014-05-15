@@ -1,8 +1,9 @@
 ---
 layout: post
-category : lessons
+title:  "Welcome to Jekyll!"
 tagline: "Supporting tagline"
-categories: intro, beginner, jekyll, tutorial
+date:   2013-11-10 10:18:00
+categories: intro beginner jekyll tutorial
 ---
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.

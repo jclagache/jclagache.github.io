@@ -10,7 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
 html,
@@ -96,46 +95,10 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-
-html {
-  height: 100%;
-  max-height: 100%;
-}
-
-body {	
-    font-family: 'Droid Serif', serif;
-    background: #E2E2E6;   
-    font-size: 14px;
-    height: 100%;
-    max-height: 100%;
-  }
-
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  font-family: 'Droid Serif', serif;
-}   
-
-h1 {
-  font-size:3.75em;
-  line-height: 1.2em;
-  letter-spacing: -2px;
-  text-indent: -3px;
-}
-
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.centered {
-  text-align: center;
-}
 
 .down-arrow {
   position: absolute;
@@ -144,113 +107,8 @@ section {
   margin-left: -12px;
   width: 25px;
   height: 14px;
-  background: url("../img/arrow.png") no-repeat; }
-
-#head {
-  background: #EB6767;
-  color: #E2E2E6;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background: url("../img/arrow.png") no-repeat; 
 }
-
-.in  {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-}
-
-.site-title {
-  font-family: 'Lobster', cursive;
-  margin: 10px 0 10px 0;
-  font-size: 5rem;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: 0 0 80px;
-  font-size: 2em;
-  line-height: 1.5em;
-  font-weight: 300;
-  letter-spacing: 0;
-}
-
-
-/*
- * Blog post
- */
-
-.single-post-section {
-  max-width: 980px;
-  padding: 45px 0;
-  background: #fff;
-}
-
-.blog-post {
-  margin-bottom:2.5em;
-  background:#fff;
-  margin-top:.625em;
-  margin-bottom:.625em;
-  padding:.9375em;
-}
-
-h1.post-title {
-  font-size:3.75em;
-}
-
-@media min-width 767px {
-  h1.post-title {
-    font-size:4.375em;
-  }
-  .blog-post {
-    padding:1.25em;
-  }
-}
-
-@media min-width 979px {
-  h1.post-title {
-    font-size:5em;
-  }
-  .blog-post {
-    padding:1.25em;
-  }
-}
-
-@media min-width 1200px {
-  h1.post-title {
-    font-size:5.625em;
-  }
-  .blog-post {
-    padding:1.25em 2.5em;
-  }
-}
-
-
-/* =========================
-
-      FOOTER 
-
-   =========================*/
-
-#social {
-  width: 100%;
-  text-align: center;
-}
-
-#social i {
-  font-size: 60px;
-  color: #59575D;
-  padding: 18px;
-}
-
-#social a {
-  text-decoration: none
-}
-
 
 
 /* ==========================================================================

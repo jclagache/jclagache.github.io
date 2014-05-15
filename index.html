@@ -3,21 +3,57 @@ layout: default
 title: jclagache Full Stack Developer
 ---
 
-	<section id="head">  
-		<div class="in">	
-	        <h1 class="site-title">jclagache</h1>    
-			<h2 class="site-description">Full Stack Developer</h2>	                 
-		</div>
-		<a href="index.html#about" class="scroll"><span class="down-arrow"></span></a>		  
-	</section> 
+<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            {% if page.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+            {% endif %}
+            <h1 class="blog-title">{{ site.name }}</h1>
+            <h2 class="blog-description"> 
+                {{ site.description }} 
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+            </h2>
+        </div>
+    </div>
+    <a href="index.html#main" class="scroll"><span class="down-arrow"></span></a>
+</header>
 
-	<section id="about">	
-	</section>
+<main id="main" class="content" role="main">
 
-	<section id="social">  
-		<div class="container">	
-			<p>
-				<a href="http://twitter.com/jclagache"><i class="fa fa-twitter fa-4x icon-social"></i></a><a href="http://www.linkedin.com/in/jclagache"><i class="fa fa-linkedin fa-4x icon-social"></i></a><a href="http://github.com/jclagache"><i class="fa fa-github fa-4x icon-social"></i></a>
-			</p>			                 
-		</div>  
-	</section> 
+    {% for post in paginator.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }}
+        </section>
+    </article>
+
+    {% endfor %}
+
+    <nav class="pagination" role="pagination">
+
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+          <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
+          {% else %}
+          <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
+          {% endif %}
+        {% endif %}
+
+        <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
+        
+        {% if paginator.next_page %} 
+        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
+        {% endif %} 
+    </nav>
+    
+
+</main>
