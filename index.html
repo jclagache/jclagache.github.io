@@ -3,12 +3,12 @@ layout: default
 title: jclagache Full Stack Developer
 ---
 
-<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
+<header class="site-head" {% if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
     <div class="vertical">
         <div class="site-head-content inner">
-            {% if page.logo %}
+            {% if site.logo %}
                 <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                    <img src="{{ site.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
             <h1 class="blog-title">{{ site.name }}</h1>
