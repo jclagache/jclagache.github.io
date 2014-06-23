@@ -96,7 +96,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: #59575D;
+    background: #E2E2E6 no-repeat center center;
 }
 
 ::-moz-selection {
@@ -150,17 +151,17 @@ h6 {
 }
 
 a {
-    color: #4a4a4a;
+    color: #434146;
     transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #888888;
 }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
-    color: #50585D;
+    color: #434146;
 }
 
 
