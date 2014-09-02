@@ -5,10 +5,11 @@ logo: /img/header.png
 paginate: 5
 
 markdown: rdiscount
+# github defaults
+highlighter: pygments
 # github overwrite
 safe: true
 lsi: false
-pygments: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Paris
