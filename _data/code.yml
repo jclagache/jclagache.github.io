@@ -1,0 +1,47 @@
+---
+# projects
+  projects : 
+    - &spring-data-mybatis
+      name : spring-data-mybatis
+      description : Simplifies the development of a <a href="http://www.mybatis.org/mybatis-3/">MyBatis</a> based <a href="http://projects.spring.io/spring-data/">String Data</a> repository
+      github-link : https://github.com/jclagache/spring-data-mybatis
+    - &pick
+      name : pick
+      description : A <a href="https://medium.com/">medium</a> inspired <a href="https://jekyllrb.com/">jekyll theme</a> 
+      external-link : http://pick.jclagache.me/
+      github-link : https://github.com/jclagache/pick
+    - &docker-github-pages
+      name : docker-github-pages
+      description : Simple <a href="https://www.docker.com/">Docker</a> image for <a href="https://jekyllrb.com/">Jekyll</a> works as <a href="https://pages.github.com/">GitHub pages</a>
+      external-link : https://hub.docker.com/r/jclagache/github-pages/
+      github-link : https://github.com/jclagache/docker-github-pages
+    - &docker-debian-puppetbase
+      name : docker-debian-puppetbase
+      description : <a href="https://www.docker.com/">Docker</a> base image based on <a href="https://www.debian.org/releases/wheezy/">Debian Wheezy</a> with <a href="https://puppetlabs.com/">Puppet</a> agent and <a href="http://librarian-puppet.com/">Librarian Puppet</a> 
+      external-link : https://hub.docker.com/r/jclagache/debian-puppetbase/
+      github-link : https://github.com/jclagache/docker-debian-puppetbase
+    - &puppet-teecli
+      name : puppet-teecli
+      description : <a href="https://puppetlabs.com/">Puppet</a> module installing the Cross-platform Command-line Client for Team Foundation Server
+      github-link : https://github.com/jclagache/puppet-teecli"
+
+  domains : 
+    - name : java
+      image : /images/java.png
+      projects : 
+        - *spring-data-mybatis
+    - name : frontend 
+      image : /images/frontend.png
+      projects : 
+        - *pick
+    - name : docker
+      image : /images/docker.png
+      projects : 
+        - *docker-github-pages
+        - *docker-debian-puppetbase
+    - name : puppet
+      image : /images/puppet.png
+      projects : 
+        - *docker-debian-puppetbase  
+        - *puppet-teecli
+
