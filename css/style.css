@@ -1,0 +1,162 @@
+html {  
+  font-size: 80%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(89, 87, 93, 1);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  padding: 1.5625rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: inherit;
+  font-size: 4rem;
+  line-height: 4.6875rem;
+  margin-top: 0rem;
+  margin-bottom: 1.5625rem;
+}
+h2 {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: inherit;
+  font-size: 2.4375rem;
+  line-height: 3.125rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+h3 {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: inherit;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+h4 {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: inherit;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+h5 {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5625rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a {
+  font-weight: 400;
+  color: rgba(89, 87, 93, 1);
+}
+
+/** Media Queries */
+/* lg */
+@media only screen and (min-width: 75em) {
+  html{
+        font-size: 100%;
+    }
+}
+/* md */
+@media only screen and (max-width: 75em) and (min-width: 64em) {
+  html{
+        font-size: 90%;
+    }
+}
+/* sm */
+@media only screen and (max-width: 64em) and (min-width: 48em) {
+  html{
+        font-size: 75%;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/** UTILS */
+
+.full-height {
+  height: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.no-marging {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.valign-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
