@@ -1,6 +1,6 @@
 
 	<div class="projects row">
-		<div class="projects-slider col-xs-offset-3 col-xs-6">
+		<div class="projects-slider col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
 		<ul>
 		{% for domain in site.data.code.domains %}
 			<li>

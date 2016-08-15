@@ -57,9 +57,10 @@ a:not(.nofx):focus::after {
   opacity: 1;
 }
 
+/**
 .section#about {
   height: calc( 100vh - 7.5rem );
-}
+}*/
 
 .flexbox.section {
   display: flex;
@@ -75,6 +76,7 @@ a:not(.nofx):focus::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .section #about-content p, .section-title p {
@@ -342,6 +344,10 @@ a:not(.nofx):focus::after {
 } 
 
 #about .off  {
+  visibility: hidden;
+}
+
+#about .closed  {
   display: none;
 }
 
@@ -382,12 +388,12 @@ a:not(.nofx):focus::after {
     top: 50%;
     z-index: 1000;
     font-size: 2em;
-    left: 10%;
+    left: 5%;
 }
 
 .unslider-arrow.next {
     left: auto;
-    right: 10%;
+    right: 5%;
 }
 
 .projects .card {

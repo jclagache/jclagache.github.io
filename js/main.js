@@ -39,18 +39,6 @@ $(function() {
 
 	var top = $('#top-header-bg').outerHeight(true);
 
-	/**
-	 * hack to get about content 'real' height
-	 
-	$offs = $('#about-content .off');
-	$('#about-content .off').removeClass('off').css({
-        'visibility':'hidden'
-    });
-    $('#about-content').css({ height: $('#about-content').outerHeight() });
-    $offs.addClass('off').css({
-	    'visibility':'visible'
-    });*/
-
 	$(".menu").selectOrDie({
 		customID: "sod",
 		placeholderOption: true,
@@ -92,7 +80,7 @@ $(function() {
 		var whatToOpens = $(this).attr('data-opens').split(',');
 		$.each(whatToOpens, function(index, whatToOpenId) {
 			$whatToOpen = $('[data-id="' + whatToOpenId +'"]');
-    		$whatToOpen.removeClass('off').addClass('on');
+    		$whatToOpen.removeClass('off').removeClass('closed').addClass('on');
     		if(!$('#about-content-footer').visible()) {
     			$("html, body").animate({scrollTop: $('#about').position().top - top}, 500);
     		}
@@ -100,7 +88,7 @@ $(function() {
 		if($(this).attr('data-closes')) {
 			var whatToCloses = $(this).attr('data-closes').split(',');
 			$.each(whatToCloses, function(index, whatToClose) {
-	    		$('[data-id="' + whatToClose +'"]').addClass('off');
+	    		$('[data-id="' + whatToClose +'"]').addClass('closed');
 			});
 		}
 		$(this).addClass('clicked');
