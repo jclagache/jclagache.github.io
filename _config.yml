@@ -5,7 +5,7 @@ logo: /img/header.png
 paginate: 5
 
 # github defaults
-highlighter: pygments
+highlighter: rouge
 # github overwrite
 safe: true
 lsi: false
